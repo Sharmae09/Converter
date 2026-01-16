@@ -1,8 +1,8 @@
 <template>
   <v-container
-    fill-height
+    height="100vh"
     fluid
-    class="hero d-flex flex-column align-center justify-center"
+    class="pa-8 hero d-flex flex-column align-center justify-center"
   >
     <div class="hero-content text-center">
       <h1 class="text-h2 font-weight-black mb-4">
@@ -42,7 +42,7 @@
 
             <v-btn
               :disabled="!selectedFile"
-              color="#ff69b4"
+              color="#dc4d99"
               large
               @click="convertFile"
               class="text-center"
@@ -160,7 +160,7 @@ function convertFile() {
 
 <style scoped>
 .hero {
-  background: linear-gradient(135deg, #ff9ff3, #ffcccb, #fffd82);
+  background: linear-gradient(135deg, #f180e2, #ffcccb, #fffd82);
   padding-bottom: 4rem;
   min-height: 100vh;
 }
