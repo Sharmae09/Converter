@@ -81,6 +81,15 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title: "Image Format Converter – JFIF, PNG, JPG, WebP Online",
+  description:
+    "Convert images between JFIF, PNG, JPG, WebP instantly with no upload limits.",
+  ogTitle: "Image Format Converter",
+  ogDescription: "Fast, privacy-first image format converter.",
+  ogType: "website",
+});
+
 import { ref } from "vue";
 
 const selectedFile = ref(null);
@@ -110,7 +119,6 @@ const features = [
 const file = ref(null);
 const format = ref(null);
 const formats = ["jpeg", "png", "webp", "jfif"];
-const convertedFile = ref(null);
 const canvas = ref(null);
 
 function convertFile() {
